@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './home.css';
 import Sidebar from '../../components/Sidebar/Sidebar';
-import Feed from '../../components/feed/feed';
+import Feed from '../../components/Feed-tem/Feed-tem';
 
 const Home = ({sidebar}) => {
 
@@ -11,7 +11,6 @@ const Home = ({sidebar}) => {
       <Sidebar sidebar={sidebar} category={category} setCategory={setCategory} />
       <div className={`container ${sidebar?"":'large-container'}`}>
         <Feed category={category}/>
-
       </div>
     </>
   );
